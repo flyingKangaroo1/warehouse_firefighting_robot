@@ -1,8 +1,3 @@
-## Video4linux: error setting camera parameter: 'Error setting controls: Permission denied ##
-위에 같은 에러 때문에 set_cam_param.sh 만들었음
-새로운 launch file 만들때, set_cam_param.sh 넣어줘야 함
-
-
 # [usb_cam](http://wiki.ros.org/usb_cam)
 [![ROS1 CI](https://github.com/ros-drivers/usb_cam/actions/workflows/main.yml/badge.svg)](https://github.com/ros-drivers/usb_cam/actions/workflows/main.yml)
 [![ROS2 CI](https://github.com/ros-drivers/usb_cam/actions/workflows/build_test.yml/badge.svg)](https://github.com/ros-drivers/usb_cam/actions/workflows/build_test.yml)
