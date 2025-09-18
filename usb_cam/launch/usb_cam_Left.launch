@@ -1,0 +1,12 @@
+<launch>
+  <arg name="image_view" default="False" />
+
+  <node name="usb_cam_Left" pkg="mm_cam" type="mm_cam_node" output="screen" >
+      <rosparam command="load" file="$(find mm_cam)/config/usb_cam_Left.yml"/>
+  </node>
+  <node if="$(arg image_view)" name="image_view_Left" pkg="image_view" type="image_view"
+        respawn="false" output="screen">
+    <remap from="image" to="/usb_cam_Left/image_raw"/>
+    <param name="autosize" value="true" />
+  </node>
+</launch>
